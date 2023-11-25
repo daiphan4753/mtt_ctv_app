@@ -1,0 +1,19 @@
+.header {
+  border-bottom: 1px solid #d0d0d0;
+  padding: 1%;
+  display: flex;
+  justify-content: space-between;
+}
+.fz-input {
+  font-size: 1em;
+}
+.header--input {
+  border: none;
+}
+.header--input:focus {
+  outline: none;
+}
+.header--icon {
+  margin-right: 5%;
+  align-self: center;
+}

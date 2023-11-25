@@ -1,0 +1,16 @@
+.inputCustom {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  border-bottom: 1px solid #C0C0C0;
+}
+.inputCustom-input {
+  width: 90%;
+  font-size: 1em;
+  border: none;
+  margin-bottom: 1%;
+}
+.inputCustom-input:focus {
+  outline: none;
+}

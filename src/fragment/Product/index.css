@@ -1,0 +1,11 @@
+.product--ul-item {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  overflow-x: auto;
+  max-height: 85vh;
+}
+.product--ul-item::-webkit-scrollbar{
+    display: none;
+}

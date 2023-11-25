@@ -1,0 +1,32 @@
+.cardUser {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.txtBold {
+    font-weight: 600;
+}
+.cardUser--box-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.cardUser--title {
+  margin-block-start: 2%;
+  margin-block-end: 2%;
+}
+.cardUser--valueTitle {
+  margin-left: 1%;
+}
+.hiddenText {
+  -webkit-text-security: disc !important;
+  writing-mode: horizontal-tb !important;
+  padding-block: 1px;
+  padding-inline: 2px;
+}
+.cardUser--next{
+    font-size: 1em;
+    margin-right: 2%;
+}

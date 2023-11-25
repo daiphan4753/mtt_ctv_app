@@ -1,0 +1,10 @@
+.no-page{
+}
+.np--img-box{
+    position: absolute;
+    top: 50%;
+    margin-top: -5em;
+}
+.np--img-box> img{
+    width: 100%;
+}
