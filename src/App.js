@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
-import {Product, Main, Notification, Account} from './fragment';
-import {Home, NoPage} from './screen'
+import { Main, Notification, Account, Product} from './fragment';
+import {Home, NoPage, SalesProduct} from './screen'
 
 const App = () => {
   return (
@@ -13,6 +13,7 @@ const App = () => {
         <Route exact path="/notification" Component={Notification} />
         <Route exact path="/account" Component={Account} />
         <Route exact path="*" Component={NoPage} />
+        <Route exact path="/home/sales/:id" Component={SalesProduct} />
       </Routes>
     </Router>
   );

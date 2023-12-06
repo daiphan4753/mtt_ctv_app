@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./index.css";
-import { SeachInput, BottomNav, ItemProduct } from "../../component";
+import { SeachInput, BottomNav, CardProduct } from "../../component";
 import { ProductData } from "../../data/ProductData";
 
 export default function Product() {
@@ -34,7 +34,7 @@ export default function Product() {
   };
   let listItem = list.map((item) => (
     <li className="product--li-item" key={item.id}>
-      <ItemProduct
+      <CardProduct
         src={item.img}
         name={item.name}
         price={item.price}

@@ -1,0 +1,29 @@
+.item-noti{
+    border-bottom: 0.5px solid #D3D3D3;
+    display: flex;
+    flex-direction: row;
+    padding-top: 5px;
+}
+.item-noti--img-box{
+    width: 10%;
+}
+.item-noti--img{
+    width: 100%;
+}
+.p{
+    margin-block-end: 2%;
+    margin-block-start: 1%;
+    margin-left: 1%;
+}
+.item-noti--box{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+.item--p-status{
+    font-size: 0.8em;
+}
+.item--p-date{
+    font-size: 0.6em;
+    opacity: 0.5;
+}

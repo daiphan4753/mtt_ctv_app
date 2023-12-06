@@ -5,4 +5,5 @@ const cutText = (text, number) => {
   return text.slice(0, number);
 }
 
-export { cutText };
+const changeVND = new Intl.NumberFormat('vi-VN', {style: 'currency', currency:'VND'});
+export { cutText, changeVND };

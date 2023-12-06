@@ -4,11 +4,9 @@ import { URL_AVATAR_USER_MALE } from "../../core/constants.js";
 import { CardUser, BottomNav } from "../../component";
 import { faPen, faRightFromBracket } from "@fortawesome/free-solid-svg-icons";
 import { cutText } from "../../core/cores.js";
-import { useNavigate } from "react-router-dom";
 import { UserData } from "../../data/UserData.js";
 
 export default function User() {
-  const nav = useNavigate();
   const showData = UserData.map((value) => (
     <div>
       <CardUser title={"Tên người dùng: "} valueTitle={value.userName} />
@@ -38,7 +36,7 @@ export default function User() {
       <div className="user">
         <div className="user--box-row">
           <div className="user--box-avatar">
-            <img className="user--avatar" src={URL_AVATAR_USER_MALE} />
+            <img className="user--avatar" src={URL_AVATAR_USER_MALE} alt=""/>
           </div>
           <div className="user--inf">{dataSummary}</div>
         </div>
