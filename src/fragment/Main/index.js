@@ -62,7 +62,7 @@ export default function Main() {
             />
           </div>
           <div className="news">
-            <h2 className="margin-start-end">Tin tức cập nhật</h2>
+            <h2 className="margin-start-end fs2">Tin tức cập nhật</h2>
             <ul>
               {NewsData.map((item) => (
                 <li key={item.title}>{cutText(item.title, 30)}</li>

@@ -10,7 +10,7 @@ export default function CardProduct(props) {
       <div className="card--title-box fa">
         <p className="card--title-brand mp">{props.brand}</p>
         <p className="card--title-name mp">{props.name}</p>
-        <p className="card--title-price mp">{props.price}<span>đ</span></p>
+        <p className="card--title-price mp">{props.price}</p>
         <button className="card--btn" onClick={props.onClick}>Thêm vào đơn</button>
       </div>
     </div>

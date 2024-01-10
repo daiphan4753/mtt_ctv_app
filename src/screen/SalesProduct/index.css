@@ -1,0 +1,76 @@
+.sales-product {
+  margin:0 10px;
+  height: 85vh;
+  overflow: auto;
+}
+.sales-product::-webkit-scrollbar{
+    display: none;
+}
+.sales-product--img {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+.b {
+  border: 1px solid rgba(59, 58, 58, 0.2);
+}
+.mr {
+  margin-block-start: 1%;
+  margin-block-end: 1%;
+}
+
+.sales-product--price {
+  color: red;
+  font-weight: 600;
+  font-size: 1.5em;
+}
+.sales-product--disc-box {
+  margin-top: 1.5em;
+  padding: 5px;
+  border-bottom: 1px solid orange;
+  position: relative;
+}
+.sales-product--disc-title {
+  position: absolute;
+  font-size: 1.2em;
+  font-weight: 600;
+  bottom: -1.4em;
+  background-color: white;
+  padding: 5px;
+}
+.sales-product--quantity {
+  display: flex;
+  flex-direction: row;
+}
+.bot-nav {
+  width: 100%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.sales-product--disc-box-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.btn-count {
+  padding: 5px 10px;
+  background-color: white;
+  font-size: 2em;
+}
+.sales-product--count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3em;
+}
+.sales-product--disc-btn {
+  padding: 5px 1em;
+  background-color: #0573ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 600;
+}

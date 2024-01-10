@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./index.css";
 import { SeachInput, BottomNav, CardProduct } from "../../component";
 import { ProductData } from "../../data/ProductData";
+import {changeVND} from '../../core/cores';
 
 export default function Product() {
   const [findProduct, setFindProduct] = useState("");
@@ -10,18 +11,23 @@ export default function Product() {
 
   function handleSearch(e) {
     setFindProduct(e);
-    if (e.length > 0) {
-      var nameArr = ProductData.filter((item) =>
-        new RegExp(e.toUpperCase()).test(item.name)
-      );
+    // if (e.length > 0) {
+    //   var nameArr = ProductData.filter((item) =>
+    //     new RegExp(e.toUpperCase()).test(item.name)
+    //   );
 
-      let brandArr = ProductData.filter((item) =>
-        new RegExp(e.toUpperCase()).test(item.brand)
-      );
-      let arr = new Set(nameArr.concat(brandArr));
-      console.log();
-      setlist(...arr);
-    } else {
+    //   var brandArr = ProductData.filter((item) =>
+    //     new RegExp(e.toUpperCase()).test(item.brand)
+    //   );
+    //   let arr = new Set(nameArr.concat(brandArr));
+    //   console.log();
+    //   setlist(...arr);
+    // } else {
+    //   setlist(ProductData);
+    // }
+    if (e.length > 0){
+      console.log(list);
+    } else{
       setlist(ProductData);
     }
   }
@@ -32,17 +38,6 @@ export default function Product() {
     setCount(count + 1);
     console.log(count);
   };
-  let listItem = list.map((item) => (
-    <li className="product--li-item" key={item.id}>
-      <CardProduct
-        src={item.img}
-        name={item.name}
-        price={item.price}
-        brand={item.brand}
-        onClick={addProduct}
-      />
-    </li>
-  ));
 
   return (
     <>
@@ -54,7 +49,19 @@ export default function Product() {
           onClick={click}
         />
         <div className="product--item-box">
-          <ul className="product--ul-item">{listItem}</ul>
+          <ul className="product--ul-item">
+            {list.map((item) => (
+              <li className="product--li-item" key={item.id}>
+                <CardProduct
+                  src={item.img}
+                  name={item.name}
+                  price={changeVND.format(item.price)}
+                  brand={item.brand}
+                  onClick={addProduct}
+                />
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
       <BottomNav value={"product"} />

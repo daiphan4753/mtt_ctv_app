@@ -9,9 +9,15 @@
   color: orange;
 }
 .item-product--name {
+  padding: 0 5px;
   font-size: 1em;
   font-weight: 600;
   text-decoration: none;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
 }
 .item-product--price {
   font-size: 1em;
